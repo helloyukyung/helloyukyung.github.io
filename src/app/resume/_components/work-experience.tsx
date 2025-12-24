@@ -20,12 +20,14 @@ function WorkExperience() {
         </header>
         <section className="mt-4" aria-labelledby="project-title">
           <h4 id="project-title" className="text-sm font-semibold text-black">
-            토스페이먼츠 JavaScript SDK
+            웍스아웃
           </h4>
 
           <p className="mt-2 leading-7 text-zinc-600">
-            토스페이먼츠의 결제를 연동하기 위해 사용하는 JavaScript SDK를 만들고
-            유지보수하고 있습니다.
+            웍스아웃(Worksout) 커머스 웹 및 앱 서비스의 프론트엔드 개발과 운영을
+            담당하고 있습니다. Next.js 기반 웹 서비스 개발부터,
+            이벤트·분석·마케팅 연동까지 전반적인 사용자 경험과 비즈니스 흐름을
+            책임지고 있습니다.
           </p>
 
           <section className="mt-4" aria-labelledby="what-i-did-title">
@@ -37,15 +39,23 @@ function WorkExperience() {
             </h5>
 
             <ul className="mt-2 list-disc space-y-1 pl-5 text-zinc-600">
-              <li>일반 결제 JavaScript SDK 구현</li>
-              <li>커넥트페이 JavaScript SDK 구현</li>
-              <li>npm 퍼블릭 패키지 배포</li>
+              <li>Next.js 기반 커머스 웹 서비스 개발 및 유지보수</li>
+              <li>상품, 장바구니, 주문/결제 등 주요 구매 플로우 UI 구현</li>
+              <li>
+                GA4, Amplitude, Braze, Meta Pixel 등 이벤트 로깅 체계 설계 및
+                표준화
+              </li>
+              <li>Domain/Event 기반 이벤트 네이밍 및 스키마 정립</li>
+              <li>GTM 및 SDK 연동, 이벤트 누락/중복 이슈 디버깅</li>
+              <li>AWS(S3, CloudFront) 기반 배포 환경 운영 및 트러블슈팅</li>
+              <li>실서비스 운영 중 발생하는 이슈 대응 및 성능 개선</li>
             </ul>
           </section>
 
           <footer className="mt-4 text-sm text-zinc-600">
             <span className="font-medium text-zinc-800">Tech Stack.</span>{" "}
-            TypeScript, Jest, Rollup
+            Next.js, React, TypeScript, React Query, GA4, GTM, Amplitude, Braze,
+            AWS
           </footer>
         </section>
       </article>
