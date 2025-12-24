@@ -1,3 +1,4 @@
+import OtherExperience from "@/app/resume/_components/other-experience";
 import WorkExperience from "@/app/resume/_components/work-experience";
 
 export default function ResumePage() {
@@ -16,6 +17,7 @@ export default function ResumePage() {
           </p>
         </header>
         <WorkExperience />
+        <OtherExperience />
       </main>
     </div>
   );

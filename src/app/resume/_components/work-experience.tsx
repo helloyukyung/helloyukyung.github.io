@@ -10,7 +10,7 @@ function WorkExperience() {
             Frontend Developer
           </h3>
           <p className="text-sm text-zinc-600">
-            <time dateTime="2020-08">2025. 03</time> –{" "}
+            <time dateTime="2020-08">2025. 03</time> –&nbsp;
             <time dateTime="present">현재</time>
           </p>
         </header>
@@ -25,10 +25,9 @@ function WorkExperience() {
             </Link>
           </h4>
           <p className="mt-2 leading-7 text-zinc-600">
-            웍스아웃(Worksout) 커머스 웹 및 앱 서비스의 프론트엔드 개발과 운영을
-            담당하고 있습니다. Next.js 기반 웹 서비스 개발부터,
-            이벤트·분석·마케팅 연동까지 전반적인 사용자 경험과 비즈니스 흐름을
-            개발해왔습니다.
+            웍스아웃 커머스 웹 및 앱 서비스의 프론트엔드 개발과 운영을 담당하고
+            있습니다. Next.js 기반 웹 서비스 개발부터, 이벤트·분석·마케팅
+            연동까지 전반적인 사용자 경험과 비즈니스 흐름을 개발해왔습니다.
           </p>
           <section className="mt-4" aria-labelledby="what-i-did-title">
             <h5 className="text-md font-semibold text-black">What did I do</h5>
