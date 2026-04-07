@@ -35,7 +35,8 @@ function WorkExperience() {
             <ul className="mt-2 list-disc space-y-1 pl-5 text-zinc-600">
               <li>Next.js 기반 커머스 웹 서비스 개발 및 유지보수</li>
               <li>
-                상품 리스트, 상품 상세, 장바구니, 주문/결제 등 주요 플로우 구현
+                상품 필터/리스트, 상품 상세, 장바구니, 주문/결제 등 주요 플로우
+                구현
               </li>
               <li>
                 Braze, Amplitude, GTM, GA4, Meta Pixel 등 이벤트 로깅 설계 및
