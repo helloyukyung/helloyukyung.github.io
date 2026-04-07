@@ -80,7 +80,13 @@ function WorkExperience() {
         {/* 안다르 채널톡 */}
         <section className="mt-6">
           <h5 className="text-md font-semibold text-black">
-            안다르 채널톡 CS Tool
+            <Link
+              href="https://www.andar.co.kr"
+              target="_blank"
+              className="hover:underline"
+            >
+              안다르 채널톡 CS Tool
+            </Link>
           </h5>
           <p className="mt-1 text-sm text-zinc-600">
             <time dateTime="2024-06">2024. 06</time> –&nbsp;
