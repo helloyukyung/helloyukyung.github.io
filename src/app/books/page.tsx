@@ -4,8 +4,17 @@ import BookList from "@/app/books/_components/book-list";
 
 const BOOKS_DATA = [
   {
+    id: 2,
+    title: "팩트풀니스",
+    author: "한스 로슬링",
+    image: "/books/factfulness.jpg",
+    date: "2026. 03 –",
+    reviewFile: "factfulness.md",
+  },
+  {
     id: 1,
     title: "익스트림 프로그래밍",
+    author: "켄트 벡",
     image: "/books/extream-programming.jpg",
     date: "2026. 02 – 2026. 03",
     reviewFile: "extreme-programming.md",
@@ -17,6 +26,7 @@ function getBooks() {
   return BOOKS_DATA.map((book) => ({
     id: book.id,
     title: book.title,
+    author: book.author,
     image: book.image,
     date: book.date,
     review: fs.readFileSync(path.join(dataDir, book.reviewFile), "utf-8"),

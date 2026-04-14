@@ -6,6 +6,7 @@ import { useEffect } from "react";
 export type Book = {
   id: number;
   title: string;
+  author: string;
   image: string;
   date: string;
   review: string;
@@ -65,7 +66,9 @@ export default function BookModal({
           <h3 className="mt-4 text-center text-lg font-semibold text-black">
             {book.title}
           </h3>
-          <p className="mt-1 text-center text-sm text-zinc-400">{book.date}</p>
+          <p className="mt-1 text-center text-sm text-zinc-400">
+            {book.author} · {book.date}
+          </p>
           <div className="mt-4 space-y-4 leading-7 text-zinc-600">
             {book.review.split("\n\n").map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
