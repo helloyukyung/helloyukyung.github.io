@@ -9,7 +9,7 @@ export type Book = {
   author: string;
   image: string;
   date: string;
-  review: string;
+  reviewHtml: string;
 };
 
 export default function BookModal({
@@ -69,11 +69,10 @@ export default function BookModal({
           <p className="mt-1 text-center text-sm text-zinc-400">
             {book.author} · {book.date}
           </p>
-          <div className="mt-4 space-y-4 leading-7 text-zinc-600">
-            {book.review.split("\n\n").map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
-          </div>
+          <div
+            className="review mt-4 leading-7 text-zinc-600"
+            dangerouslySetInnerHTML={{ __html: book.reviewHtml }}
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { marked } from "marked";
 import BookList from "@/app/books/_components/book-list";
 
 const BOOKS_DATA = [
@@ -29,7 +30,9 @@ function getBooks() {
     author: book.author,
     image: book.image,
     date: book.date,
-    review: fs.readFileSync(path.join(dataDir, book.reviewFile), "utf-8"),
+    reviewHtml: marked.parse(
+      fs.readFileSync(path.join(dataDir, book.reviewFile), "utf-8"),
+    ) as string,
   }));
 }
 

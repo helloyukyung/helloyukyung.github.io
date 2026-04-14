@@ -17,3 +17,45 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.review p + p {
+  margin-top: 1rem;
+}
+
+.review a {
+  color: #27272a;
+  text-decoration: underline;
+}
+
+.review a:hover {
+  color: #000;
+}
+
+.review code {
+  background: #f4f4f5;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.review pre {
+  background: #f4f4f5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review pre code {
+  background: none;
+  padding: 0;
+}
+
+.review blockquote {
+  border-left: 3px solid #d4d4d8;
+  padding-left: 1rem;
+  color: #71717a;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
