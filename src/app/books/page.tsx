@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
-import { marked } from "marked";
 import BookList from "@/app/books/_components/book-list";
+import fs from "fs";
+import { marked } from "marked";
+import path from "path";
 
 const BOOKS_DATA = [
   {
@@ -9,7 +9,7 @@ const BOOKS_DATA = [
     title: "팩트풀니스",
     author: "한스 로슬링",
     image: "/books/factfulness.jpg",
-    date: "2026. 03 –",
+    date: "2026. 03 – 2026.04.20",
     reviewFile: "factfulness.md",
   },
   {
@@ -31,7 +31,7 @@ function getBooks() {
     image: book.image,
     date: book.date,
     reviewHtml: marked.parse(
-      fs.readFileSync(path.join(dataDir, book.reviewFile), "utf-8"),
+      fs.readFileSync(path.join(dataDir, book.reviewFile), "utf-8")
     ) as string,
   }));
 }
